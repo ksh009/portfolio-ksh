@@ -15,21 +15,30 @@
 <body>
   <div class="body">
     <header class="header">
-      <nav class="header__nav">
+      <nav class="header__nav flex flex--row flex--justify-space-between">
+        <div class="brand">
+          <a href="#hero">
+            <h2>K<span>yl</span>e S<span>ea</span>n H<span>ughe</span>s</h2>
+          </a>
+        </div>
+        <ul class="hamburger row">
+          <li class="bar row"></li>
+        </ul>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#hero">HOME</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </header>
     <main class="main">
-      <section class="main__hero">
+      <section id="hero" class="main__hero">
         <h1>Welcome to My Portfolio</h1>
         <p>I'm John Doe, a passionate web developer.</p>
       </section>
-      <section class="main__skills">
+      <section id="skills" class="main__skills">
         <h2>Skills</h2>
         <ul>
           <li>HTML5</li>
@@ -39,7 +48,7 @@
           <li>Node.js</li>
         </ul>
       </section>
-      <section class="main__project">
+      <section id="projects" class="main__project">
         <h2>Projects</h2>
         <div class="project__item">
           <h3>Project 1</h3>
@@ -50,11 +59,11 @@
           <p>Nulla ultricies bibendum augue, a ultrices nisi viverra quis.</p>
         </div>
       </section>
-      <section class="main__about">
+      <section id="about" class="main__about">
         <h2>About Me</h2>
         <p>Hello! I'm John Doe, a web developer with a passion for creating beautiful and functional websites.</p>
       </section>
-      <section class="main__contact">
+      <section id="contact" class="main__contact">
         <h2>Contact Me</h2>
         <form>
           <label for="name">Name:</label>

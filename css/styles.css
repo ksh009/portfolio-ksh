@@ -140,11 +140,18 @@ form {
   grid-row: 1;
   background-color: var(--tertiary-color);
   padding: 20px;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
 }
 
 /* Navigation styles */
 .header__nav {
   list-style: none;
+  /* padding: 0 5%; */
 }
 
 .header__nav li {
@@ -159,6 +166,10 @@ form {
 .header__nav a {
   text-decoration: none;
   color: var(--plain-white);
+}
+
+.header__nav ul + ul {
+  width: 37%;
 }
 
 /* Main section styles */
