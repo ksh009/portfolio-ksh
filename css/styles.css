@@ -5,7 +5,8 @@
   --primary-variant: #ff2d2d;
   --secondary-color: #5d6017;
   --tertiary-color: #175d60;
-  --plain-white: white;
+  --plain-white: #fff;
+  --primary-text-color: #000;
   --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
   --custom-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
   --custom-box-shadow-two: rgba(50, 50, 93, 0.25) 0px 9px 18px -3px,
@@ -31,13 +32,25 @@ form {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh; /* To ensure the footer sticks to the bottom */
   font-family: 'Montserrat', sans-serif;
-  color: #333;
+  color: var(--primary-text-color);
+}
+
+/* Utility styles */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header section styles */
 .header {
   grid-row: 1;
-  background-color: #f2f2f2;
+  background-color: var(--tertiary-color);
   padding: 20px;
 }
 
@@ -57,7 +70,7 @@ form {
 
 .header__nav a {
   text-decoration: none;
-  color: #333;
+  color: var(--plain-white);
 }
 
 /* Main section styles */
