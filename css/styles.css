@@ -285,6 +285,13 @@ p {
   align-content: center;
 }
 
+/* Font colors and Background */
+.aws--bg {
+  background-color: var(--primary-text-color);
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
 /* Header section styles */
 .header {
   position: fixed;
@@ -601,26 +608,23 @@ p {
   .main__skills ul {
     width: 80%;
     display: grid;
-    grid-gap: 2.7rem;
+    grid-gap: 2.9rem;
     grid-template-columns: repeat(2, 1fr);
+    border-radius: 15px;
   }
 
-  .main__skills ul div {
-    min-height: 36rem;
+  .main__skills ul li {
+    min-height: 18rem;
+    list-style: none;
   }
 
-  .main__skills ul div div {
-    max-height: 18rem;
+  .main__skills ul li div {
+    max-height: 9rem;
+    max-width: 6rem;
     margin-bottom: 1.8rem;
   }
 
-  .main__skills li,
-  .project__item,
-  .main__about p,
-  .main__contact label {
-    font-size: 18px;
-    margin-bottom: 15px;
-  }
+  /* project section */
 
   .main__project .project__item {
     margin-bottom: 25px;
