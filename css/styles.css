@@ -280,11 +280,6 @@ p {
   align-content: center;
 }
 
-/* Text alignment */
-.text--align-center {
-  text-align: center;
-}
-
 /* Header section styles */
 .header {
   position: fixed;
@@ -363,7 +358,15 @@ p {
 .main__about,
 .main__contact {
   background-color: var(--plain-white);
-  border-radius: 5px;
+  width: 100%;
+}
+
+.main__skills,
+.main__project,
+.main__about,
+.main__contact {
+  height: auto;
+  margin: 3rem 0;
 }
 
 /* Hero section styles */
@@ -438,14 +441,6 @@ p {
 .main__hero div a:hover {
   color: white;
   background-color: var(--primary-color);
-}
-
-.main__skills h2,
-.main__project h2,
-.main__about h2,
-.main__contact h2 {
-  font-size: 22px;
-  margin-bottom: 10px;
 }
 
 .main__skills li,
@@ -586,8 +581,9 @@ p {
   .main__project h2,
   .main__about h2,
   .main__contact h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 3.8rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
   }
 
   .main__skills li,
