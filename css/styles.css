@@ -35,16 +35,104 @@ form {
   color: var(--primary-text-color);
 }
 
-/* Utility styles */
-.flex-row {
+/* Utility classes */
+.flex {
   display: flex;
+}
+
+.flex--row {
   flex-direction: row;
   justify-content: center;
 }
 
-.flex-column {
-  display: flex;
+.flex--column {
   flex-direction: column;
+}
+
+/* Flex alignment */
+.flex--align-start {
+  align-items: flex-start;
+}
+
+.flex--align-center {
+  align-items: center;
+}
+
+.flex--align-end {
+  align-items: flex-end;
+}
+
+/* Flex justify content */
+.flex--justify-start {
+  justify-content: flex-start;
+}
+
+.flex--justify-center {
+  justify-content: center;
+}
+
+.flex--justify-end {
+  justify-content: flex-end;
+}
+
+.flex--justify-space-between {
+  justify-content: space-between;
+}
+
+.flex--justify-space-around {
+  justify-content: space-around;
+}
+
+/* Flex wrapping */
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
+.flex--wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+/* Flex items */
+.flex-item--grow {
+  flex-grow: 1;
+}
+
+.flex-item--shrink {
+  flex-shrink: 1;
+}
+
+.flex-item--basis-auto {
+  flex-basis: auto;
+}
+
+.flex-item--basis-0 {
+  flex-basis: 0;
+}
+
+/* Cross-axis alignment (for row layout) */
+.flex--align-items-start {
+  align-items: flex-start;
+}
+
+.flex--align-items-center {
+  align-items: center;
+}
+
+.flex--align-items-end {
+  align-items: flex-end;
+}
+
+/* Cross-axis alignment (for column layout) */
+.flex--align-content-start {
+  align-content: flex-start;
+}
+
+.flex--align-content-center {
+  align-content: center;
+}
+
+.flex--align-content-end {
+  align-content: flex-end;
 }
 
 /* Header section styles */
