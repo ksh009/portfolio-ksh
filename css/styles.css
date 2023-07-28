@@ -14,7 +14,7 @@
 }
 
 /* Reset default margin and padding for the whole document */
-body,
+/* body,
 h1,
 h2,
 h3,
@@ -24,13 +24,80 @@ li,
 form {
   margin: 0;
   padding: 0;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: var(--plain-white);
+}
+
+i {
+  font-size: 2rem;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+  padding: 0 2rem 0 0;
+}
+
+i:hover {
+  color: var(--primary-color);
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+p {
+  color: black;
+  font-size: 1.4rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
 }
 
 /* Apply CSS Grid layout to the main sections */
 .body {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height: 100vh; /* To ensure the footer sticks to the bottom */
+  min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
   color: var(--primary-text-color);
 }
@@ -137,7 +204,6 @@ form {
 
 /* Header section styles */
 .header {
-  grid-row: 1;
   background-color: var(--tertiary-color);
   padding: 20px;
   position: fixed;
@@ -151,11 +217,11 @@ form {
 /* Navigation styles */
 .header__nav {
   list-style: none;
-  /* padding: 0 5%; */
+  font-size: 1.5rem;
+  width: 100%;
 }
 
 .header__nav li {
-  display: inline-block;
   margin-right: 20px;
 }
 
@@ -168,8 +234,26 @@ form {
   color: var(--plain-white);
 }
 
-.header__nav ul + ul {
-  width: 37%;
+.header__nav div {
+  flex-basis: 30%;
+}
+
+.header__nav ul {
+  flex-basis: 70%;
+  list-style: none;
+  margin-right: 20px;
+}
+
+.header__nav .hamburger {
+  display: none;
+}
+
+.header__nav h2 {
+  text-transform: uppercase;
+}
+
+.header__nav h2 span {
+  color: var(--primary-color);
 }
 
 /* Main section styles */
