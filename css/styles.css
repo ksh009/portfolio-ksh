@@ -89,7 +89,7 @@ p {
 }
 
 /* Animation classes */
-.tracking-in-contract-bck-bottom {
+.tracking-in-contract--bck-bottom {
   -webkit-animation: tracking-in-contract-bck-bottom 3s
     cubic-bezier(0.215, 0.61, 0.355, 1) both;
   animation: tracking-in-contract-bck-bottom 3s
@@ -287,22 +287,24 @@ p {
 
 /* Header section styles */
 .header {
-  background-color: var(--tertiary-color);
-  padding: 14px 20px;
   position: fixed;
   z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: auto;
-  box-shadow: var(--custom-box-shadow);
 }
 
 /* Navigation styles */
 .header__nav {
+  padding: 14px 20px;
+  box-shadow: var(--custom-box-shadow);
+  background-color: var(--tertiary-color);
   list-style: none;
   font-size: 1.8rem;
   width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .header__nav li {
@@ -437,10 +439,6 @@ p {
   color: white;
   background-color: var(--primary-color);
 }
-
-/* .main__hero p {
-  font-size: 16px;
-} */
 
 .main__skills h2,
 .main__project h2,
