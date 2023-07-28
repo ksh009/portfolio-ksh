@@ -41,24 +41,6 @@ i:hover {
   color: var(--primary-color);
 }
 
-.container {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-}
-
 img {
   height: 100%;
   width: 100%;
@@ -78,6 +60,12 @@ p {
   line-height: 2.5rem;
   font-weight: 300;
   letter-spacing: 0.05rem;
+}
+
+hr {
+  border-top: 0.5px solid white;
+  margin: 20px 0;
+  width: 100%;
 }
 
 /* Dynanamic styles */
@@ -686,9 +674,13 @@ p {
 
   /* project section */
 
-  .main__project .project__item {
-    margin-bottom: 25px;
+  .main__project div {
+    width: 90%;
   }
+
+  /* .main__project .project__item {
+    margin-bottom: 25px;
+  } */
 
   .main__contact input,
   .main__contact textarea {
