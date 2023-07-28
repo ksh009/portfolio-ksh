@@ -361,14 +361,6 @@ p {
   width: 100%;
 }
 
-.main__skills,
-.main__project,
-.main__about,
-.main__contact {
-  height: auto;
-  margin: 3rem 0;
-}
-
 /* Hero section styles */
 .main__hero {
   background-image: url(./img/cyber-city_compressed1.png);
@@ -575,6 +567,19 @@ p {
 
   .main__hero p {
     font-size: 20px;
+  }
+
+  .main__skills,
+  .main__project,
+  .main__about,
+  .main__contact {
+    width: 100%;
+    height: auto;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .main__skills h2,
