@@ -63,7 +63,7 @@ p {
 }
 
 hr {
-  border-top: 0.5px solid white;
+  border-top: 0.5px solid var(--plain-white);
   margin: 9px 0;
   width: 100%;
 }
@@ -681,6 +681,7 @@ hr {
 
   .main__project div {
     width: 90%;
+    color: var(--plain-white);
   }
 
   .main__project div div {
@@ -698,10 +699,24 @@ hr {
   .main__project .project--info h3 {
     font-size: 4rem;
     font-weight: 500;
+    flex-basis: 20%;
   }
 
-  .main__project .project--info hr, p {
+  .main__project .project--info hr {
+    flex-basis: 0.5%;
+  }
+
+  .main__project .project--info .project--text {
+    flex-basis: 50%;
+  }
+
+  .main__project .project--info div {
+    flex-basis: 25%;
+  }
+
+  .main__project .project--info hr, .project--text {
     width: 90%;
+    color: var(--plain-white);
   }
 
   /* .main__project .project__item {
