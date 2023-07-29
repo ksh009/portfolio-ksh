@@ -734,7 +734,7 @@ hr {
   .main__skills ul {
     width: 80%;
     display: grid;
-    grid-gap: 2.9rem;
+    grid-gap: 7.2rem;
     grid-template-columns: repeat(3, 1fr);
     border-radius: 15px;
   }
