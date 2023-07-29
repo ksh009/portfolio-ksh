@@ -64,7 +64,7 @@ p {
 
 hr {
   border-top: 0.5px solid white;
-  margin: 20px 0;
+  margin: 9px 0;
   width: 100%;
 }
 
@@ -338,6 +338,11 @@ hr {
   background-color: var(--primary-text-color);
   border-radius: 50%;
   margin-bottom: 1.5rem;
+}
+
+/* Margin and padding */
+.margin--top {
+  margin-top: 1rem;
 }
 
 /* Header section styles */
@@ -675,6 +680,27 @@ hr {
   /* project section */
 
   .main__project div {
+    width: 90%;
+  }
+
+  .main__project div div {
+   min-height: 5.4rem;
+  }
+
+  .main__project .project--info {
+    background-color: var(--tertiary-color);
+  }
+
+  .main__project .project--info .margin--top {
+    margin-top: 2rem;
+  }
+
+  .main__project .project--info h3 {
+    font-size: 4rem;
+    font-weight: 500;
+  }
+
+  .main__project .project--info hr, p {
     width: 90%;
   }
 
