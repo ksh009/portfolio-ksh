@@ -501,9 +501,6 @@ hr {
 
 /* Hero section styles */
 .main__hero {
-  background-image: url(./img/cyber-city_compressed1.png);
-  background-size: cover;
-  background-position: top center;
   position: relative;
   z-index: 1;
 }
@@ -798,18 +795,60 @@ hr {
     animation: jello-horizontal 1.2s both;
   }
 
-  /* .main__project .project__item {
-    margin-bottom: 25px;
-  } */
+  /* about section */
+  .main__about div {
+    width: 81%;
+  }
 
+  .main__about div h3 {
+    font-size: 3.6rem;
+    font-weight: 500;
+    flex-basis: 20%;
+    margin-bottom: 1rem;
+  }
+
+  .main__about div p {
+    margin-bottom: 2rem;
+    font-size: 14px;
+  }
+
+  .main__about div div {
+    width: 100%;
+  }
+
+  .main__about div div h4 {
+    font-size: 14px;
+  }
+
+  .main__about div div h4 a {
+    color: var(--primary-color);
+  }
+
+  /* contact section */
   .main__contact input,
   .main__contact textarea {
     padding: 12px;
     margin-bottom: 15px;
   }
 
+  .main__contact button,
+  input {
+    border-radius: 15px;
+  }
+
   .main__contact button {
     padding: 14px 22px;
+    border: 3px var(--primary-color) solid;
+    color: var(--primary-text-color);
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .main__contact button:hover {
+    padding: 14px 22px;
+    border: 3px var(--tertiary-color) solid;
+    color: var(--plain-white);
+    background-color: var(--primary-color);
   }
 
   .footer__content p {
