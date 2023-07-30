@@ -10,8 +10,30 @@ const skillsHeading = document.querySelector(".main__skills h2");
 const projectsHeading = document.querySelector(".main__project h2");
 const aboutHeading = document.querySelector(".main__about h2");
 const contactHeading = document.querySelector(".main__contact h2");
+const hamburger = document.querySelector(".header__nav .hamburger");
+const mobileMenu = document.querySelector(".header__nav .header__nav__links");
+const mobileMenuDiv = document.querySelector(".nav-mobile-closed");
+const bodyElm = document.querySelector(".body");
+const menuItems = document.querySelectorAll("#nav-list-mobile li");
 
 // Event listeners
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  mobileMenu.classList.toggle("active");
+  mobileMenuDiv.classList.toggle("nav-mobile-open");
+  bodyElm.classList.toggle("overflow-hidden");
+});
+
+menuItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    console.log("clicked the nav mobile item");
+    hamburger.classList.remove("active");
+    mobileMenu.classList.remove("active");
+    mobileMenuDiv.classList.remove("nav-mobile-open");
+    bodyElm.classList.remove("overflow-hidden");
+  });
+});
+
 document.addEventListener("scroll", () => {
   let scroll_position = window.scrollY;
   if (scroll_position > 100) {

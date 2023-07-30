@@ -19,12 +19,24 @@
         <nav
           class="header__nav flex flex--row flex--justify-space-between flex--align-items-center"
         >
-          <div>
+          <div class="header__nav__logo">
             <a href="#hero">
               <h2>K<span>yl</span>e S<span>ea</span>n H<span>ughe</span>s</h2>
             </a>
           </div>
-          <ul class="flex flex--row flex--justify-start">
+          <ul class="hamburger flex flex--row">
+            <li class="bar flex flex--row"></li>
+          </ul>
+          <ul class="header__nav__links flex flex--row flex--justify-start">
+            <li><a href="#hero">HOME</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-mobile-closed">
+          <ul class="nav-list-mobile" id="nav-list-mobile">
             <li><a href="#hero">HOME</a></li>
             <li><a href="#skills">SKILLS</a></li>
             <li><a href="#projects">PROJECTS</a></li>
