@@ -682,6 +682,22 @@ hr {
   margin-bottom: 15px;
 }
 
+/* Contact section styles */
+.google-form-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive scaling (change as needed) */
+  height: 0;
+}
+
+.google-form-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* Footer section styles */
 .footer {
   grid-row: 3;
@@ -849,6 +865,7 @@ hr {
 
   .main__project .project--info .project--text {
     flex-basis: 50%;
+    min-height: 16.2rem;
   }
 
   .main__project .project--info div {
@@ -893,6 +910,28 @@ hr {
 
   .main__about div div h4 a {
     color: var(--primary-color);
+  }
+
+  /* Contact */
+  .main__contact .main__contact--container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .main__contact .main__contact--img {
+    flex-basis: 40%;
+    height: 72%;
+  }
+
+  .main__contact .main__contact--img img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .main__contact .main__contact--text {
+    flex-basis: 60%;
+    font-size: 1.8rem;
+    font-weight: normal;
   }
 
   /* Footer */
