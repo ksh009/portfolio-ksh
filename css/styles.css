@@ -899,6 +899,11 @@ hr {
     font-size: 1.2rem;
     font-weight: normal;
   }
+
+  /* Footer */
+  .footer .footer__content div {
+    margin: 3% 0;
+  }
 }
 
 @media screen and (min-width: 576px) {
