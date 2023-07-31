@@ -772,6 +772,81 @@ hr {
     margin-bottom: 1.8rem;
     height: 5.4rem;
   }
+
+  /* Projects */
+  .main__project div {
+    width: 96%;
+    color: var(--plain-white);
+  }
+
+  .main__project div div {
+    min-height: 5.4rem;
+    margin-left: 0.54rem;
+  }
+
+  .main__project #project-1,
+  #project-2,
+  #project-3,
+  #project-4,
+  #project-5,
+  #project-6 {
+    margin-bottom: 2rem;
+    max-width: 81%;
+    background-color: var(--primary-color);
+    border-radius: 5%;
+  }
+
+  .main__project #project-2 img,
+  #project-3 img,
+  #project-4 img,
+  #project-5 img {
+    width: 101%;
+  }
+
+  .main__project .main__project--project__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .main__project .project--info {
+    background-color: var(--tertiary-color);
+  }
+
+  .main__project .project--info .margin--top {
+    margin-top: 2rem;
+  }
+
+  .main__project .project--info h3 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    flex-basis: 20%;
+  }
+
+  .main__project .project--info hr {
+    flex-basis: 0.5%;
+  }
+
+  .main__project .project--info .project--text {
+    flex-basis: 50%;
+    min-height: 16.2rem;
+  }
+
+  .main__project .project--info div {
+    flex-basis: 25%;
+  }
+
+  .main__project .project--info hr,
+  .project--text {
+    width: 90%;
+    color: var(--plain-white);
+  }
+
+  .main__project .project--img:hover {
+    -webkit-animation: jello-horizontal 1.2s both;
+    animation: jello-horizontal 1.2s both;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -827,8 +902,79 @@ hr {
     height: 5.4rem;
   }
 
-  .main__project .project__item {
-    margin-bottom: 20px;
+  /* Projects */
+  .main__project div {
+    width: 90%;
+    color: var(--plain-white);
+  }
+
+  .main__project div div {
+    min-height: 5.4rem;
+    margin-left: 2.5rem;
+  }
+
+  .main__project #project-1,
+  #project-2,
+  #project-3,
+  #project-4,
+  #project-5,
+  #project-6 {
+    margin-bottom: 2rem;
+    max-width: 81%;
+    background-color: var(--primary-color);
+    border-radius: 5%;
+  }
+
+  .main__project #project-2 img,
+  #project-3 img,
+  #project-4 img,
+  #project-5 img {
+    width: 101%;
+  }
+
+  .main__project .main__project--project__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .main__project .project--info {
+    background-color: var(--tertiary-color);
+  }
+
+  .main__project .project--info .margin--top {
+    margin-top: 2rem;
+  }
+
+  .main__project .project--info h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    flex-basis: 20%;
+  }
+
+  .main__project .project--info hr {
+    flex-basis: 0.5%;
+  }
+
+  .main__project .project--info .project--text {
+    flex-basis: 50%;
+    min-height: 16.2rem;
+  }
+
+  .main__project .project--info div {
+    flex-basis: 25%;
+  }
+
+  .main__project .project--info hr,
+  .project--text {
+    width: 90%;
+    color: var(--plain-white);
+  }
+
+  .main__project .project--img:hover {
+    -webkit-animation: jello-horizontal 1.2s both;
+    animation: jello-horizontal 1.2s both;
   }
 
   .main__contact input,
@@ -924,13 +1070,33 @@ hr {
 
   .main__project div div {
     min-height: 5.4rem;
-    margin-left: 3rem;
+    margin-left: 2.5rem;
+  }
+
+  .main__project #project-1,
+  #project-2,
+  #project-3,
+  #project-4,
+  #project-5,
+  #project-6 {
+    margin-bottom: 2rem;
+    max-width: 81%;
+    background-color: var(--primary-color);
+    border-radius: 5%;
+  }
+
+  .main__project #project-2 img,
+  #project-3 img,
+  #project-4 img,
+  #project-5 img {
+    width: 101%;
   }
 
   .main__project .main__project--project__container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 2rem;
   }
 
   .main__project .project--info {
@@ -1075,6 +1241,25 @@ hr {
     font-size: 3.5rem;
     font-weight: 500;
     flex-basis: 9%;
+  }
+
+  .main__project #project-1,
+  #project-2,
+  #project-3,
+  #project-4,
+  #project-5,
+  #project-6 {
+    margin-bottom: 0;
+    max-width: 100%;
+    background-color: transparent;
+    border-radius: 0%;
+  }
+
+  .main__project #project-2 img,
+  #project-3 img,
+  #project-4 img,
+  #project-5 img {
+    width: 100%;
   }
 
   .main__project div div {
