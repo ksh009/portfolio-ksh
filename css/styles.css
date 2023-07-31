@@ -920,11 +920,17 @@ hr {
   .main__project div {
     width: 90%;
     color: var(--plain-white);
-    display: none;
   }
 
   .main__project div div {
     min-height: 5.4rem;
+    margin-left: 3rem;
+  }
+
+  .main__project .main__project--project__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .main__project .project--info {
@@ -1073,6 +1079,7 @@ hr {
 
   .main__project div div {
     min-height: 5.4rem;
+    margin-left: 0;
   }
 }
 
