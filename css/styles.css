@@ -719,6 +719,19 @@ hr {
 }
 
 /* Mobile Responsive Styles */
+@media screen and (min-width: 360px) {
+  /* Styles for small devices (>= 360px) */
+
+  /* Navigation */
+  .header .header__nav__mobile--closed .nav-list-mobile {
+    position: absolute;
+    left: 16%;
+    top: 20%;
+    list-style: none;
+    /* width: 100%; */
+  }
+}
+
 @media screen and (min-width: 576px) {
   /* Styles for small devices (>= 576px) */
   .main__hero h1 {
