@@ -19,12 +19,24 @@
         <nav
           class="header__nav flex flex--row flex--justify-space-between flex--align-items-center"
         >
-          <div>
+          <div class="header__nav__logo">
             <a href="#hero">
               <h2>K<span>yl</span>e S<span>ea</span>n H<span>ughe</span>s</h2>
             </a>
           </div>
-          <ul class="flex flex--row flex--justify-start">
+          <ul class="hamburger flex flex--row">
+            <li class="bar flex flex--row"></li>
+          </ul>
+          <ul class="header__nav__links flex flex--row flex--justify-start">
+            <li><a href="#hero">HOME</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+        <nav class="flex flex--column header__nav__mobile--closed">
+          <ul class="nav-list-mobile" id="nav-list-mobile">
             <li><a href="#hero">HOME</a></li>
             <li><a href="#skills">SKILLS</a></li>
             <li><a href="#projects">PROJECTS</a></li>
@@ -222,7 +234,7 @@
           <div
             class="flex flex--column flex--align-center flex--justify-center"
           >
-            <div class="flex flex--row flex--justify-center">
+            <div id="project-1" class=".main__project--project__container">
               <div
                 class="project--info flex flex--column flex--align-center flex--justify-center"
               >
@@ -264,7 +276,7 @@
                 />
               </div>
             </div>
-            <div class="flex flex--row flex--justify-center">
+            <div id="project-2" class=".main__project--project__container">
               <div class="project--img">
                 <img src="./img/project-images/8.DecentraFund.jpg" alt="img" />
               </div>
@@ -313,7 +325,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex flex--row flex--justify-center">
+            <div id="project-3" class=".main__project--project__container">
               <div
                 class="project--info flex flex--column flex--align-center flex--justify-center"
               >
@@ -360,7 +372,7 @@
                 />
               </div>
             </div>
-            <div class="flex flex--row flex--justify-center">
+            <div id="project-4" class=".main__project--project__container">
               <div class="project--img">
                 <img
                   src="./img/project-images/14.css-dash-odin-project.png"
@@ -402,7 +414,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex flex--row flex--justify-center">
+            <div id="project-5" class=".main__project--project__container">
               <div
                 class="project--info flex flex--column flex--align-center flex--justify-center"
               >
@@ -433,7 +445,7 @@
                 />
               </div>
             </div>
-            <div class="flex flex--row flex--justify-center">
+            <div id="project-6" class=".main__project--project__container">
               <div class="project--img">
                 <img src="./img/project-images/15.bookworks.png" alt="img" />
               </div>
@@ -506,7 +518,7 @@
               Best, Kyle.
             </p>
             <h3 class="about-h2">Professional Experience</h3>
-            <hr style="border-top: 1px solid black; margin: 20px 0" />
+            <hr class="main__about--hr" />
             <div>
               <h4>Company: Techadon Technologies</h4>
               <h4>Capacity: Junior Fullstack Developer</h4>
@@ -521,7 +533,7 @@
                 >
               </h4>
             </div>
-            <hr style="border-top: 1px solid black; margin: 20px 0" />
+            <hr class="main__about--hr" />
             <p>
               My role at Techadon was multifaceted, with responsibilities on the
               client-side that involved implementing features like
@@ -555,22 +567,25 @@
         <!-- about end -->
         <section id="contact" class="main__contact">
           <h2>Contact Me</h2>
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSeee8UqyZqzm-vcBQH51FeiWNUN3d3uZ6RYLOiFZsOEQ9R8Rg/viewform?embedded=true"
-            width="640"
-            height="686"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            >Loading…</iframe
+          <div
+            class="main__contact--container flex flex--column flex--align-center flex--justify-center"
           >
+            <div
+              class="main__contact--img flex flex--row flex--align-center flex--justify-center"
+            >
+              <img src="./img/Skill-Logos/20.gmail.png" alt="gmail" />
+            </div>
+            <div class="main__contact--text">
+              <h3>khughessean01@gmail.com</h3>
+            </div>
+          </div>
         </section>
       </main>
       <!-- Footer start-->
       <footer class="footer">
         <div class="footer__content">
           <p>&copy; 2023 Kyle Sean Hughes. All rights reserved.</p>
-          <div class="project-links row footer-icon-padding">
+          <div>
             <a href="https://twitter.com/phoenix9_9" target="_blank"
               ><i title="twitter" class="fab fa-twitter" aria-hidden="true"></i
             ></a>
