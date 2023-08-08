@@ -364,6 +364,10 @@ hr {
   overflow: hidden;
 }
 
+.project-reference {
+  color: var(--primary-color);
+}
+
 /* Header section styles */
 .header {
   position: fixed;
