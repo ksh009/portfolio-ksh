@@ -734,6 +734,9 @@ hr {
   .main__project div div {
     min-height: 5.4rem;
     margin-left: 0.54rem;
+    background-color: var(--tertiary-color);
+    padding: 1.9%;
+    border-radius: 5%;
   }
 
   .main__project #project-1,
@@ -746,13 +749,7 @@ hr {
     max-width: 81%;
     background-color: var(--primary-color);
     border-radius: 5%;
-  }
-
-  .main__project #project-2 img,
-  #project-3 img,
-  #project-4 img,
-  #project-5 img {
-    width: 101%;
+    padding: 2%;
   }
 
   .main__project .main__project--project__container {
@@ -1291,6 +1288,14 @@ hr {
     flex-basis: 9%;
   }
 
+  .main__project div div {
+    min-height: 5.4rem;
+    margin-left: 0;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+  }
+
   .main__project #project-1,
   #project-2,
   #project-3,
@@ -1301,6 +1306,7 @@ hr {
     max-width: 100%;
     background-color: transparent;
     border-radius: 0%;
+    padding: 0;
   }
 
   .main__project #project-2 img,
@@ -1309,17 +1315,6 @@ hr {
   #project-5 img {
     width: 100%;
   }
-
-  .main__project div div {
-    min-height: 5.4rem;
-    margin-left: 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  /* .header__nav .hamburger {
-    display: none;
-  } */
 }
 
 /* Custom breakpoints */
@@ -1343,5 +1338,12 @@ hr {
     font-size: 4rem;
     font-weight: 500;
     flex-basis: 20%;
+  }
+
+  .main__project #project-2 img,
+  #project-3 img,
+  #project-4 img,
+  #project-5 img {
+    width: 100.9%;
   }
 }
