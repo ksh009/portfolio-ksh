@@ -1339,4 +1339,11 @@ hr {
     font-weight: 500;
     flex-basis: 20%;
   }
+
+  .main__project #project-2 img,
+  #project-3 img,
+  #project-4 img,
+  #project-5 img {
+    width: 100.9%;
+  }
 }
