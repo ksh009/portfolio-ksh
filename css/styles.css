@@ -734,6 +734,7 @@ hr {
   .main__project div div {
     min-height: 5.4rem;
     margin-left: 0.54rem;
+    background-color: var(--tertiary-color);
   }
 
   .main__project #project-1,
@@ -746,13 +747,7 @@ hr {
     max-width: 81%;
     background-color: var(--primary-color);
     border-radius: 5%;
-  }
-
-  .main__project #project-2 img,
-  #project-3 img,
-  #project-4 img,
-  #project-5 img {
-    width: 101%;
+    padding: 2%;
   }
 
   .main__project .main__project--project__container {
