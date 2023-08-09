@@ -735,6 +735,8 @@ hr {
     min-height: 5.4rem;
     margin-left: 0.54rem;
     background-color: var(--tertiary-color);
+    padding: 1.9%;
+    border-radius: 5%;
   }
 
   .main__project #project-1,
