@@ -671,13 +671,13 @@ hr {
 }
 
 /* Mobile Responsive Styles */
-@media screen and (min-width: 360px) {
-  /* Styles for small devices (>= 360px) */
+@media screen and (min-width: 320px) {
+  /* Styles for small devices (>= 320px) */
 
   /* Navigation */
   .header .header__nav__mobile--closed .nav-list-mobile {
     position: absolute;
-    left: 16%;
+    left: 12%;
     top: 20%;
     list-style: none;
   }
@@ -768,7 +768,7 @@ hr {
   }
 
   .main__project .project--info h3 {
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     font-weight: 500;
     flex-basis: 20%;
   }
@@ -852,6 +852,21 @@ hr {
   /* Footer */
   .footer .footer__content div {
     margin: 3% 0;
+  }
+}
+
+/* Mobile Responsive Styles */
+@media screen and (min-width: 360px) {
+  /* Styles for small devices (>= 360px) */
+
+  /* Navigation */
+  .header .header__nav__mobile--closed .nav-list-mobile {
+    left: 15%;
+  }
+
+  /* Projects */
+  .main__project .project--info h3 {
+    font-size: 2.1rem;
   }
 }
 
