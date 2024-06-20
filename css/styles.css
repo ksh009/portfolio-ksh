@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
 
 :root {
   --primary-color: #60175d;
@@ -21,7 +21,7 @@
 
 html {
   font-size: 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -44,7 +44,7 @@ i:hover {
 img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 video {
@@ -448,7 +448,7 @@ hr {
 
 .header__nav .hamburger:after {
   position: absolute;
-  content: "";
+  content: '';
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -468,7 +468,7 @@ hr {
 
 .header__nav .hamburger .bar::after,
 .header__nav .hamburger .bar::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 100%;
   width: 100%;
@@ -555,7 +555,7 @@ hr {
 }
 
 .main__hero::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
