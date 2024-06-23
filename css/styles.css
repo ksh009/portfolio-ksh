@@ -546,13 +546,6 @@ hr {
 }
 
 /* Hero section styles */
-.main__hero {
-  background-image: url(../img/cyber-city_compressed1.png);
-  background-size: cover;
-  background-position: top center;
-  position: relative;
-  z-index: 1;
-}
 
 .main__hero::before {
   content: '';
