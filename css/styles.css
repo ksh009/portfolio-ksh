@@ -1362,3 +1362,50 @@ hr {
     width: 100.9%;
   }
 }
+
+/* ------------------ */
+.accordion {
+  margin: 20px 0;
+}
+
+.accordion details {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.accordion summary {
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold;
+  flex: 1;
+}
+
+.company-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.summary-text {
+  margin: 0;
+}
+
+.accordion details[open] summary {
+  background-color: #eee;
+}
+
+.accordion .content {
+  padding: 10px 15px;
+  display: none;
+}
+
+.accordion details[open] .content {
+  display: block;
+}
